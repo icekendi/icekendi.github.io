@@ -1,44 +1,58 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin');
-
 //background colorsets
-$bgcolor: #5d5d5d;
-
+$bgcolor: #C2C2C2;
+$revbgcolor: #5d5d5d;
 //Hover Theme
-$hoverBoxColor: rgba(255, 255, 255, 0.6);
-$mainColorTheme: #68838B;
-
-
+$hoverBoxColor: rgba(255,
+255,
+255,
+0.6);
+$mainColorTheme: #458B74;
 h1 {
-    color: #EBECE4;
     font-size: 30px;
     display: block;
     margin-top: 70px;
     text-align: center;
 }
 
+#brochureH1 {
+    color: #6d6d6d;
+}
+
+.reverseH1 {
+    color: white;
+}
+
+
+
+
+
+
+
 html,
 p {}
 
 .revLogoPage {
-    background-color: $bgcolor;
+    background-color: $revbgcolor;
 }
 
 .LogoPage {
-    background-color: darkgray;
+    background-color: $bgcolor;
+}
+
+.brochurePage {
+    background-color: #DBDBDB;
 }
 
 
 
 body {
     font-family: 'Cabin', sans-serif;
-    color: aqua
 }
 
-
-
-
-
-.wrapper {
+.wrapper,
+.eventlogo,
+{
     max-width: 900px;
     margin: auto;
     padding: 30px 0;
@@ -53,7 +67,6 @@ body {
     height: 120px;
     transition: all .1s ease-in-out;
     margin: 30px 30px;
-
     .small {
         width: 100%;
         height: 100%;
@@ -94,14 +107,12 @@ body {
             -webkit-align-items: center;
             text-align: center;
             box-sizing: border-box;
-
             .logoImage {
                 max-width: 100%;
                 max-height: 55%;
                 margin: auto;
             }
         }
-
     }
     .small {
         display: none;
@@ -110,26 +121,29 @@ body {
 
 .boxcontainer {
     text-align: center;
-
 }
 
 .logoFormatBox {
     text-align: center;
     padding-bottom: 5px;
-
 }
 
 .logoFormatBox a {
-        box-sizing: border-box;
-         display: inline-block;
-        font-size: 6px;
-        text-align: center;
-        color: $mainColorTheme;
-        text-decoration: none;
-        border: 1px solid $mainColorTheme;
-        padding: 5px 0;
-        width: 40px;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 6px;
+    text-align: center;
+    color: $mainColorTheme;
+    text-decoration: none;
+    border: 1px solid $mainColorTheme;
+    padding: 5px 0;
+    width: 40px;
+}
 
+.logoFormatBox a:hover {
+    color: white;
+    box-sizing: border-box;
+    background-color: $mainColorTheme!important;
 }
 
 h2 {
@@ -143,14 +157,6 @@ h2 {
     background-color: #6B6B6B;
 }
 
-
-
-.logoFormatBox a:hover {
-    color: white;
-    box-sizing: border-box;
-    background-color: $mainColorTheme!important;
-}
-
 .spacer {
     height: 5px;
     border-bottom: 1px solid white;
@@ -159,24 +165,80 @@ h2 {
 }
 
 .clipMessage {
-          padding-bottom: 10px;
-        p::before {
-            content: "Click image above to copy link location";
-            font-size: 6px;
-            color: #3d3d3d;
-
-}}
+    padding-bottom: 10px;
+    p::before {
+        content: "Click image above to copy link location";
+        font-size: 6px;
+        color: #3d3d3d;
+    }
+}
 
 .clipMessage2 {
-            margin-bottom: 5px;
+    margin-bottom: 5px;
+    p::before {
+        font-size: 6px;
+        color: $mainColorTheme;
+        content: "Transparent images:";
+    }
+}
 
-        p::before {
-            font-size: 6px;
-            color: $mainColorTheme;
-            content: "Transparent images:";
+footer {
+    width: 100%;
+    height: 300px;
+    background-color: #333;
+}
 
-}}
+.container {
+    width: 100%;
+    min-height: 70vh;
+}
 
+.pusher {
+    width: 100%;
+    min-height: 5vh;
+}
 
-
+//brochure styles
+.brochure {
+    text-align: center;
+    margin: 30px;
+    img {
+        width: 120px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+        transition: all 0.3s ease-in-out;
+        &::after {
+            content: "";
+            border-radius: 5px;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        &:hover {
+            -webkit-transform: scale(1.25, 1.25);
+            transform: scale(1.25, 1.25);
+        }
+    }
+    h5 {
+        padding: 10px 0;
+        color: black;
+        font-weight: 600;
+    }
+    p {
+        font-size: 12px;
+        color: black;
+        &:before {
+            content: "UPDATED ON: ";
+            font-size: 10px;
+            font-weight: 600;
+            color: dimgray;
+        }
+    }
+}
 

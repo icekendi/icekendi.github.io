@@ -1,22 +1,30 @@
 @import url("https://fonts.googleapis.com/css?family=Cabin");
 h1 {
-  color: #EBECE4;
   font-size: 30px;
   display: block;
   margin-top: 70px;
   text-align: center; }
 
+#brochureH1 {
+  color: #6d6d6d; }
+
+.reverseH1 {
+  color: white; }
+
 .revLogoPage {
   background-color: #5d5d5d; }
 
 .LogoPage {
-  background-color: darkgray; }
+  background-color: #C2C2C2; }
+
+.brochurePage {
+  background-color: #DBDBDB; }
 
 body {
-  font-family: 'Cabin', sans-serif;
-  color: aqua; }
+  font-family: 'Cabin', sans-serif; }
 
-.wrapper {
+.wrapper,
+.eventlogo {
   max-width: 900px;
   margin: auto;
   padding: 30px 0;
@@ -85,11 +93,16 @@ body {
   display: inline-block;
   font-size: 6px;
   text-align: center;
-  color: #68838B;
+  color: #458B74;
   text-decoration: none;
-  border: 1px solid #68838B;
+  border: 1px solid #458B74;
   padding: 5px 0;
   width: 40px; }
+
+.logoFormatBox a:hover {
+  color: white;
+  box-sizing: border-box;
+  background-color: #458B74 !important; }
 
 h2 {
   font-size: 20px;
@@ -99,11 +112,6 @@ h2 {
 
 .outerwrapper {
   background-color: #6B6B6B; }
-
-.logoFormatBox a:hover {
-  color: white;
-  box-sizing: border-box;
-  background-color: #68838B !important; }
 
 .spacer {
   height: 5px;
@@ -122,7 +130,56 @@ h2 {
   margin-bottom: 5px; }
   .clipMessage2 p::before {
     font-size: 6px;
-    color: #68838B;
+    color: #458B74;
     content: "Transparent images:"; }
+
+footer {
+  width: 100%;
+  height: 300px;
+  background-color: #333; }
+
+.container {
+  width: 100%;
+  min-height: 70vh; }
+
+.pusher {
+  width: 100%;
+  min-height: 5vh; }
+
+.brochure {
+  text-align: center;
+  margin: 30px; }
+  .brochure img {
+    width: 120px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out; }
+    .brochure img::after {
+      content: "";
+      border-radius: 5px;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      opacity: 0;
+      -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); }
+    .brochure img:hover {
+      -webkit-transform: scale(1.25, 1.25);
+      transform: scale(1.25, 1.25); }
+  .brochure h5 {
+    padding: 10px 0;
+    color: black;
+    font-weight: 600; }
+  .brochure p {
+    font-size: 12px;
+    color: black; }
+    .brochure p:before {
+      content: "UPDATED ON: ";
+      font-size: 10px;
+      font-weight: 600;
+      color: dimgray; }
 
 /*# sourceMappingURL=styles.css.map */
