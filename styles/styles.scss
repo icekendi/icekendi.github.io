@@ -23,13 +23,9 @@ h1 {
     color: white;
 }
 
-
-
 #reverseH1 {
     color: white;
 }
-
-
 
 html,
 p {}
@@ -186,12 +182,6 @@ h2 {
     }
 }
 
-footer {
-    width: 100%;
-    height: 300px;
-    background-color: #333;
-}
-
 .container {
     width: 100%;
     min-height: 70vh;
@@ -202,7 +192,7 @@ footer {
     min-height: 5vh;
 }
 
-//brochure styles
+//  brochure styles
 .brochure {
     text-align: center;
     margin: 30px;
@@ -246,8 +236,7 @@ footer {
     }
 }
 
-
-//Templates styles
+//  Templates styles
 .templates {
     text-align: center;
     margin: 30px;
@@ -291,11 +280,59 @@ footer {
     }
 }
 
+//  Footers
 
-#footerID {
-    background-color: white;
-    p {
-        font-size: 50px;
-        color: salmon;
-    }
+.flexcontainer {
+      display: flex;
+        justify-content: flex-start;
+    flex-wrap: wrap;
+    max-width: 900px;
+    max-height: 300px;
+    margin: auto;
 }
+
+
+footer {
+    width: 100%;
+    height: 300px;
+    background-color: #333;
+        text-align: left;
+
+}
+
+.footWrapper {
+    margin: 20px auto;
+    padding-top: 20px;
+          display: flex;
+        justify-content: flex-start;
+        max-width: 33.2%;
+
+
+
+    span {
+        font-size: 16px;
+        color: #4CAF50;
+        padding-bottom: 10px;
+        display: inline-block;
+    }
+    .divider {
+        border-bottom: 2px solid #4CAF50;
+        width: 70px;
+        margin-bottom: 10px;
+    }
+    li {
+        color: #7A7A7A;
+        text-decoration: none;
+        line-height: 25px;
+        font-size: 15px;
+        &:hover{
+        color: #9BCD9B;
+    }
+    }
+
+
+
+}
+
+
+
