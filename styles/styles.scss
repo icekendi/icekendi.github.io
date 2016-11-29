@@ -16,7 +16,7 @@ h1 {
 }
 
 #brochureH1 {
-    color: #6d6d6d;
+    color: palegoldenrod;
 }
 
 .reverseH1 {
@@ -25,7 +25,9 @@ h1 {
 
 
 
-
+#reverseH1 {
+    color: white;
+}
 
 
 
@@ -41,10 +43,12 @@ p {}
 }
 
 .brochurePage {
-    background-color: #DBDBDB;
+    background-color: #00485B;
 }
 
-
+.mediakitPage {
+    background-color: #8B7D6B;
+}
 
 body {
     font-family: 'Cabin', sans-serif;
@@ -227,12 +231,12 @@ footer {
     }
     h5 {
         padding: 10px 0;
-        color: black;
+        color: white;
         font-weight: 600;
     }
     p {
         font-size: 12px;
-        color: black;
+        color: white;
         &:before {
             content: "UPDATED ON: ";
             font-size: 10px;
@@ -287,3 +291,11 @@ footer {
     }
 }
 
+
+#footerID {
+    background-color: white;
+    p {
+        font-size: 50px;
+        color: salmon;
+    }
+}
