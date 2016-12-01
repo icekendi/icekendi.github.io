@@ -12,7 +12,11 @@
     <link rel="stylesheet" href="styles/animations.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="jquery.min.js"></script>
-
+    <script>
+        $(document).ready(function(){
+        $( "#footerID" ).load( "footer.html" );
+        });
+    </script>
 </head>
 <body class="mediakitPage">
     <header>
@@ -53,7 +57,7 @@ Banners
                 <li>
                     <a href="#">Banners</a>
                     <ul>
-                        <li><a href="#">Event Banners</a></li>
+                        <li><a href="eventbanners.html">Event Banners</a></li>
                         <li><a href="#">Ad Banners</a></li>
                         <li><a href="#">Survey / Others</a></li>
                     </ul>
@@ -140,10 +144,11 @@ Security Summit
 
 <div class="pusher"></div>
 
-
-
-
-<footer></footer>
+<!-----------------------------------
+footer
+------------------------------------->
+<footer id="footerID">
+</footer>
 
 </body>
 

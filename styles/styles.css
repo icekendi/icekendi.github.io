@@ -26,6 +26,12 @@ h1 {
 .mediakitPage {
   background-color: #8B7D6B; }
 
+.templatePage {
+  background-color: #8B8378; }
+
+.bannersPage {
+  background-color: #474747; }
+
 body {
   font-family: 'Cabin', sans-serif; }
 
@@ -255,5 +261,40 @@ footer {
     font-size: 15px; }
     .footWrapper li:hover {
       color: #9BCD9B; }
+
+.banners {
+  text-align: center;
+  margin: 30px; }
+  .banners img {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out; }
+    .banners img::after {
+      content: "";
+      border-radius: 5px;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      opacity: 0;
+      -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); }
+    .banners img:hover {
+      -webkit-transform: scale(1.25, 1.25);
+      transform: scale(1.25, 1.25); }
+  .banners h5 {
+    padding: 10px 0;
+    color: white;
+    font-weight: 600; }
+  .banners p {
+    font-size: 12px;
+    color: white; }
+    .banners p:before {
+      content: "UPDATED ON: ";
+      font-size: 10px;
+      font-weight: 600;
+      color: dimgray; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -5,14 +5,18 @@
     <link rel="stylesheet" href="styles/reset.css">
     <meta charset="UTF-8"> ̌
     <meta name="robots" content="noindex, nofollow">
-    <title>Document</title>
+    <title>ENM Logo</title>
     <link rel="stylesheet" href="styles/nav-working.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/clearfix.css">
     <link rel="stylesheet" href="styles/animations.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="jquery.min.js"></script>
-
+    <script>
+        $(document).ready(function(){
+        $( "#footerID" ).load( "footer.html" );
+        });
+    </script>
 </head>
 <body class="LogoPage">
     <header>
@@ -53,7 +57,7 @@ Banners
                 <li>
                     <a href="#">Banners</a>
                     <ul>
-                        <li><a href="#">Event Banners</a></li>
+                        <li><a href="eventbanners.html">Event Banners</a></li>
                         <li><a href="#">Ad Banners</a></li>
                         <li><a href="#">Survey / Others</a></li>
                     </ul>
@@ -199,7 +203,12 @@ Event Logo Script
 
 
 <div class="pusher"></div>
-<footer></footer>
+
+<!-----------------------------------
+footer
+------------------------------------->
+<footer id="footerID">
+</footer>
 
 </body>
 
